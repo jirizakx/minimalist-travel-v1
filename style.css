@@ -1,0 +1,100 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary);
+}
+
+.home-paragraphs {
+    display: flex;
+    width: 100%;
+}
+
+.home-paragraph-content {
+    padding: 2%;
+    background-color: var(--suplementary);
+    font-size: 1.4em;
+}
+
+#intro-text {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding-top: 22%;
+    padding-bottom: 22%;
+    justify-content: center;
+    background: url('imgs/suitcase.jpg') no-repeat;
+    background-size: cover;
+    background-position-y: bottom;
+    color: var(--secondary);
+    text-shadow: 3px 3px var(--primary);
+    font-size: 2.2em;
+}
+
+#intro-paragraph {
+    margin-top: 85vh;
+    margin-bottom: 4%;
+    justify-content: space-between;
+    border-radius: 1em;
+    width: 100%;
+    font-size: .95em;
+}
+
+#intro-paragraph-content {
+    display: flex;
+    width: 75%;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+#city-img {
+    margin-right: 9%;
+    border-top-right-radius: .7em;
+    border-bottom-right-radius: .7em;
+    width: 40%;
+    height: 37%;
+}
+
+#tips-paragraph {
+    justify-content: right;
+    padding-bottom: 3%;
+}
+
+#tips-paragraph-content {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.55em;
+}
+
+/*.paragraph-ref {*/
+/*    text-decoration: 2px var(--primary) underline;*/
+/*    cursor: default;*/
+/*}*/
+
+#outdoor-img {
+    margin-left: 9%;
+    border-top-left-radius: .7em;
+    border-bottom-left-radius: .7em;
+    width: 45%;
+    height: 50%;
+}
+
+#resources-paragraph {
+    justify-content: center;
+    margin-top: 2%;
+    padding: 15% 0;
+    background: url("imgs/pack.jpg");
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: center;
+}
+
+#resources-paragraph-content {
+    background-color: var(--suplementary);
+    border-radius: .6em;
+}
