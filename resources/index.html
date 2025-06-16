@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minimalist travel</title>
+  <link rel="stylesheet" href="/mt/src/general.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" type="image/x-icon" href="/mt/imgs/favicon.ico" />
+</head>
+<body>
+<header id="header"></header>
+<main>
+  <h1 id="intro-title">Resources</h1>
+  <section id="content">
+    <section class="paragraph">
+      <h2>My travel list</h2>
+      <label for="note-content"></label><textarea id="note-content">
+      2x t-shirts
+      2x underwear (some black/monocolour as they can be used as swimsuits)
+      2x pairs of socks
+      1x Hoodie
+
+      sunscreen (if not traveling in winter)
+      toothbrush
+      toothpaste
+      interdental toothbrushes
+      electric razor
+      (hairbrush)
+      deodorant
+
+      wallet
+      passport
+      notebook
+      (e-reader)
+      headphones
+      usb-C charger
+      (watch charger)
+      sunglasses
+      (raincoat)
+      running t-shirt (+shorts)
+      chewing gums
+
+      On body:
+      shorts/jeans, t-shirt, ...
+      barefoots/running shoes/sneakers
+      snacks
+
+      To-do checklist before leaving:
+      download offline maps
+      cut nails
+      download podcasts, books, etc.
+      buy a 0.5l water bottle for airplane
+    </textarea>
+    <button id="copyBtn" onclick="copyNote()">Click to Copy</button>
+    <script>
+      function copyNote() {
+        const content = document.getElementById('note-content').value;
+        navigator.clipboard.writeText(content).then(() => {
+          alert('Copied! Now you can go to your notes and paste.');
+        });
+      }
+    </script>
+    </section>
+    <section class="paragraph">
+      <h2>Links</h2>
+      <ul id="resources-links">
+        <li><a target="_blank" href="https://mapy.com">mapy.com</a> - best maps.</li>
+        <li><a target="_blank" href="https://nomads.com">nomads.com</a> - cool for approximating costs, safety, etc. in places, where you want to go.</li>
+        <li><a target="_blank" href="https://hoodmaps.com/prague-neighborhood-map">hoodmaps.com</a> - understand different neighbourhoods of the city you are visiting and which ones are actually worth visiting.</li>
+        <li><a target="_blank" href="https://geocaching.com">geocaching.com</a></li>
+        <li><a target="_blank" href=https://apps.apple.com/us/app/unesco-world-heritage-collect/id1630381703"">UNESCO Heritage Collect (iphone) / </a><a target="_blank" href="https://play.google.com/store/apps/details?id=com.hengeveld.unescoworldheritagecollect&hl=en">UNESCO Heritage Collect (android)</a></li>
+      </ul>
+    </section>
+    <section class="paragraph">
+      <h2>Mail me!</h2>
+      <p>If you have any questions or maybe want some recommendations, just mail me on j@zak.software</p>
+    </section>
+  </section>
+</main>
+<footer id="footer"></footer>
+<script src="/mt/src/main.js"></script>
+</body>
+</html>
